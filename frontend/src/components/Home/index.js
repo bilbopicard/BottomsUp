@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getCocktails } from '../../store/cocktail';
 import { useEffect, useState } from 'react';
 import Cocktail from '../Cocktail';
+import './Home.css';
 
 export default function Homepage() {
 
@@ -15,7 +16,7 @@ export default function Homepage() {
         dispatch(getCocktails());
     }, [])
     return (
-        <div>
+        <div className="homepage-container">
             <h2>Cocktails Homepage</h2>
             <ul>
                 {cocktails.map(cocktail => (

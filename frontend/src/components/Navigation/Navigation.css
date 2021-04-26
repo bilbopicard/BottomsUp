@@ -1,4 +1,20 @@
-nav {
+nav {  
     background-color: darkgrey;
     padding: 20px;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+
+}
+button {
+    margin-right: 40px;
+}
+
+.active {
+    font-weight: bold;
 }

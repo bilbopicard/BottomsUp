@@ -1,4 +1,4 @@
-import './cocktail.css';
+import './Cocktail.css';
 
 export default function Cocktail({ cocktail }) {
     return (
