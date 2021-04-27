@@ -8,7 +8,7 @@ export default function SingleCocktail() {
     const { id } = useParams();
 
     const cocktail = useSelector(state => state.cocktails[id]);
-    console.log(cocktail)
+    // console.log(cocktail)
 
     const dispatch = useDispatch();
     useEffect(() => {
