@@ -1,0 +1,23 @@
+#form-div {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label {
+    padding: 10px;
+}
+input {
+    width: 100%;
+}
+
+#signup {
+    width: 50%;
+    margin: auto;
+}

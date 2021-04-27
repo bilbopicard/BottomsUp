@@ -29,12 +29,14 @@ function Navigation({ isLoaded }) {
                     <NavLink exact to="/">Home</NavLink>
                 </li>
                 <li>
+                    <h1 className='bottoms-up'>BottomsUp</h1>
+                </li>
+                <li>
                     <div className='profile-btns'>
                         {isLoaded && sessionLinks}
                     </div>
                 </li>
             </ul>
-
         </nav>
     );
 }

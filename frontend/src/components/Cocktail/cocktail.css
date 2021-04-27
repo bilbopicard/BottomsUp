@@ -4,16 +4,18 @@
     padding: 10px 20px;
     margin: 20px;
     border-radius: 10px;
-    height: 350px;
-    transition: background-color .25s ease-out;
+    height: 90px;
+    transition: all .25s ease-out;
     background-color: lightgrey;
+    overflow: scroll;
 }
 
 .outer-cocktail-div:hover {
     background-color: rgba(119, 136, 153, 0.6);
+    height: 190px;
 }
 
-h2 {
+.cocktail-name {
     border-bottom: 2px solid black;
     text-align: center;
     margin-top: 0px;

@@ -17,12 +17,16 @@ export default function SingleCocktail() {
 
     return (
         <div className='single-cocktail-div'>
-            <h2>Cocktail Page</h2>
-            <div className='inner-div'>
 
-                <p>{cocktail.name}</p>
-                <p>{cocktail.recipe}</p>
-                <p>{cocktail.description}</p>
+            <div className='inner-div'>
+                <h1 className='cocktail-info'>{cocktail?.name}</h1>
+                <img className='cocktail-photo' src={`${cocktail?.imageUrl}`} alt={`${cocktail?.name}`} />
+                <div className='recipe-div'>
+                    {cocktail?.recipe.split(',').map(step => (
+                        <p className='cocktail-info'>{step}</p>
+                    ))}
+                </div>
+                <p className='cocktail-info'>{cocktail?.description}</p>
             </div>
         </div>
     )

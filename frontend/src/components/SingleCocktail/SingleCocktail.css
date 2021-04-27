@@ -3,3 +3,24 @@
     width: 80%;
     margin: auto;
 }
+.inner-div {
+    border: 2px solid red;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recipe-div {
+    background-color:lightgrey;
+    text-align: center;
+    margin-top:10px;
+    border-radius: 4px;
+}
+.cocktail-photo {
+    width: 400px;
+    border-radius: 10px;
+}
+.cocktail-info {
+    margin: 5px;
+}

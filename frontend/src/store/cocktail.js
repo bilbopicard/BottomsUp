@@ -1,7 +1,7 @@
-const LOAD = 'cocktail/LOAD';
+const POPULATE = 'cocktail/POPULATE';
 
 const load = (list) => ({
-    type: LOAD,
+    type: POPULATE,
     list
 })
 
@@ -15,15 +15,15 @@ export const getCocktails = () => async (dispatch) => {
     }
 }
 
-// export const getOneCocktail = (id) => async (dispatch) => {
-//     const response = await fetch(`/api/cocktails/${id}`)
+export const getOneCocktail = (id) => async (dispatch) => {
+    const response = await fetch(`/api/cocktails/${id}`)
 
-//     if (response.ok) {
-//         const cocktail = await response.json()
+    if (response.ok) {
+        const cocktail = await response.json()
 
-//         dispatch(cocktail)
-//     }
-// }
+        dispatch(cocktail)
+    }
+}
 
 const initialState = {
     list: [],
@@ -39,7 +39,7 @@ const sortList = list => {
 
 const cocktailReducer = (state = initialState, action) => {
     switch (action.type) {
-        case LOAD:
+        case POPULATE:
             const allCocktails = {};
             action.list.forEach(cocktail => {
                 allCocktails[cocktail.id] = cocktail;

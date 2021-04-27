@@ -8,12 +8,12 @@ export default function Cocktail({ cocktail }) {
     //  onMouseLeave = {() => setIsShown(false)}
     return (
         <div className="outer-cocktail-div" >
-            <h2>{cocktail.name}</h2>
-            <img src={`${cocktail.imageUrl}`} alt={`${cocktail.name}`} />
-            {/* {cocktail.recipe.split(',').map(step => (
-                    <p>{step}</p>
-                ))}
-                <p>{cocktail.description}</p> */}
+            <h2 className="cocktail-name">{cocktail.name}</h2>
+            {/* <img src={`${cocktail.imageUrl}`} alt={`${cocktail.name}`} /> */}
+            {cocktail.recipe.split(',').map(step => (
+                <p>{step}</p>
+            ))}
+            {/* <p>{cocktail.description}</p>  */}
         </div>
     )
 }
