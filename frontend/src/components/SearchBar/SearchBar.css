@@ -1,0 +1,9 @@
+.auto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar {
+    width: 30%;
+}
