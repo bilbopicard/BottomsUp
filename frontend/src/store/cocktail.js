@@ -15,6 +15,16 @@ export const getCocktails = () => async (dispatch) => {
     }
 }
 
+// export const getOneCocktail = (id) => async (dispatch) => {
+//     const response = await fetch(`/api/cocktails/${id}`)
+
+//     if (response.ok) {
+//         const cocktail = await response.json()
+
+//         dispatch(cocktail)
+//     }
+// }
+
 const initialState = {
     list: [],
 }

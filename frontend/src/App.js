@@ -5,6 +5,7 @@ import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Homepage from "./components/Home";
+import SingleCocktail from './components/SingleCocktail';
 
 function App() {
   const dispatch = useDispatch();
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/signup">
             <SignupFormPage />
+          </Route>
+          <Route path='/cocktails/:id'>
+            <SingleCocktail />
           </Route>
         </Switch>
       )}

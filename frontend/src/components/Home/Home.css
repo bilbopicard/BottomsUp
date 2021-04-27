@@ -3,3 +3,14 @@
     width: 80%;
     margin: auto;
 }
+
+ul {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cocktail-link {
+    text-decoration: none;
+    color: inherit;
+}

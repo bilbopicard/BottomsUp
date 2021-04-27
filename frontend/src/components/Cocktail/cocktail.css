@@ -1,4 +1,24 @@
-.cocktail-div {
+.outer-cocktail-div {
     border: 2px solid black;
     width: 200px;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    height: 350px;
+    transition: background-color .25s ease-out;
+    background-color: lightgrey;
+}
+
+.outer-cocktail-div:hover {
+    background-color: rgba(119, 136, 153, 0.6);
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+img {
+    width: 100%;
 }
