@@ -10,11 +10,24 @@ module.exports = {
       },
       name: {
         allowNull: false,
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
+        unique: true
       },
-      spirit: {
+      recipe: {
         allowNull: false,
-        type: Sequelize.STRING(50)
+        type: Sequelize.TEXT
+      },
+      description: {
+        allowNull: false,
+        type: Sequelize.TEXT
+      },
+      userId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'Users' }
+      },
+      imageUrl: {
+        type: Sequelize.STRING(255)
       },
       createdAt: {
         allowNull: false,
