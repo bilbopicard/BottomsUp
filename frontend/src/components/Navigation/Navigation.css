@@ -1,15 +1,35 @@
 nav {  
     background-color: darkgrey;
-    padding: 20px;
+    padding: 10px 0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+}
+.bottoms-up {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
 }
 
 li {
     list-style-type: none;
-
+}
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+nav a:hover {
+    text-decoration: underline;
 }
 button {
     margin-right: 40px;
