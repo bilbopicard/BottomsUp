@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', asyncHandler(async function (req, res) {
     const cocktails = await Cocktail.findAll();
-    console.log(cocktails)
+    // console.log(cocktails)
     return res.json(cocktails);
 }));
 
