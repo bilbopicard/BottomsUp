@@ -6,7 +6,8 @@ const router = express.Router();
 
 router.get('/', requireAuth, asyncHandler(async function (req, res) {
     const cocktails = await Cocktail.findAll({
-        include: Comment
+        include: Comment,
+        order: [['name', 'ASC']]
     });
     // console.log(cocktails)
     return res.json(cocktails);

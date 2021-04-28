@@ -29,10 +29,7 @@ function Navigation({ isLoaded }) {
         <nav>
             <ul className='nav-list'>
                 <li>
-                    <NavLink exact to="/">Home</NavLink>
-                </li>
-                <li>
-                    <h1 className='bottoms-up'>BottomsUp</h1>
+                    <NavLink exact to="/"><h1 className='bottoms-up'>BottomsUp</h1></NavLink>
                 </li>
                 <li>
                     {isLoaded && sessionLinks}

@@ -4,15 +4,19 @@
     padding: 10px 20px;
     margin: 20px;
     border-radius: 10px;
-    height: 90px;
+    height: 120px;
     transition: all .25s ease-out;
-    background-color: lightgrey;
-    overflow: scroll;
+    background-color: #f3f4ed;
+    overflow-y: scroll;
 }
 
-.outer-cocktail-div:hover {
+/* .outer-cocktail-div:hover {
     background-color: rgba(119, 136, 153, 0.6);
     height: 190px;
+} */
+.hovered {
+    background-color: rgb(187, 214, 231);
+    /* height: 190px; */
 }
 
 .cocktail-name {

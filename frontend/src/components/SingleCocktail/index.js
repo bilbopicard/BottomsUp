@@ -8,12 +8,12 @@ export default function SingleCocktail() {
     const { id } = useParams();
 
     const cocktail = useSelector(state => state.cocktails[id]);
-    console.log(cocktail.Comments)
+    console.log(cocktail?.Comments)
 
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getCocktails());
-    }, [])
+    }, [dispatch])
 
     return (
         <div className='single-cocktail-div'>
@@ -26,7 +26,16 @@ export default function SingleCocktail() {
                         <p className='cocktail-info'>{step}</p>
                     ))}
                 </div>
-                <p className='cocktail-info'>{cocktail?.description}</p>
+                <div className='description-div'>
+                    <ol>
+                        {cocktail?.description.split('.').map(step => (
+
+                            <li>{step}</li>
+
+                        ))}
+                    </ol>
+                </div>
+                {/* <p className='cocktail-info'>{cocktail?.description}</p> */}
             </div>
         </div>
     )
