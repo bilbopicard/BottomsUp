@@ -33,9 +33,9 @@ li a {
 nav a:hover {
     text-decoration: underline;
 }
-/* button {
-    margin-right: 40px;
-} */
+.profile-div {
+    display: flex;
+}
 
 .active {
     font-weight: bold;
