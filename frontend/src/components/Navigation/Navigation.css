@@ -1,13 +1,14 @@
 nav {  
     position: fixed;
     top: 0;
-    background-color: darkgrey;
-    padding: 10px 0;
-    height: 75px;
+    background-color: #f3f4ed;
+    /* padding: 10px 0; */
+    height: 8vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0, 0.3);
 }
 .nav-list {
     display: flex;
@@ -20,10 +21,10 @@ nav {
 }
 .bottoms-up {
     /* border: 2px solid red; */
-    
+    /* font-weight: normal; */
     padding: 0;
-    margin: 0 auto;
-    font-size: 3rem;
+    margin: 0;
+    font-size: 2rem;
     /* position: absolute; */
     left: 40%;
 }
@@ -37,6 +38,7 @@ li a {
 }
 nav a:hover {
     text-decoration: underline;
+    text-decoration-color: #c06014;
 }
 .profile-div {
     display: flex;

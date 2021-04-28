@@ -1,0 +1,8 @@
+.featured-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featured-cocktail-img {
+    width: 30%;
+}
