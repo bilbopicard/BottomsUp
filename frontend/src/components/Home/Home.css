@@ -1,9 +1,30 @@
-
-.homepage-container {
-    border: 4px solid #c06014;
-    background-color: #536162;
-    width: 60%;
-    margin: 50px auto;
+#home-container {
+    box-sizing: border-box;
+    margin: 12vh auto 2vh;
+    height: 84vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    background-color: #f3f4ed;
+}
+#featured-cocktail-container {
+    text-align: center;
+    height: auto;
+    width: 70%;
+    /* border: 2px solid green; */
+    box-sizing: border-box;
+    padding-bottom: 40px;
+}
+.cocktail-search-container {
+    border-left: 4px solid #c06014;
+    /* background-color: #f3f4ed; */
+    box-sizing: border-box;
+    overflow-y: scroll;
+    width: 30%;
+    height: auto;
+    min-width: 240px;
 }
 
 ul {
@@ -22,8 +43,8 @@ h1 {
     color: inherit;
 }
 .cocktail-search {
-    margin-top: 20px;
-    width: 30%;
+    /* margin-top: 20px; */
+    width: 80%;
     font-size: 1.2rem;
     padding: 5px;
 }

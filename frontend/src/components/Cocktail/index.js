@@ -11,10 +11,10 @@ export default function Cocktail({ cocktail }) {
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
         >
-            <h2 className="cocktail-name">{cocktail.name}</h2>
-            {cocktail.recipe.split(',').map(step => (
+            <p className="cocktail-name">{cocktail.name}</p>
+            {/* {cocktail.recipe.split(',').map(step => (
                 <p>{step}</p>
-            ))}
+            ))} */}
         </div>
     )
 }
