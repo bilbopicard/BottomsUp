@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import * as sessionActions from '../../store/session';
+import './Navigation.css';
 
 function ProfileButton({ user }) {
     const dispatch = useDispatch();
     const [showMenu, setShowMenu] = useState(false);
-
+    const { id } = useSelector(state => state.session.user)
     const openMenu = () => {
         if (showMenu) return;
         setShowMenu(true);
@@ -30,18 +32,18 @@ function ProfileButton({ user }) {
 
     return (
         <div className="profile-div">
-            <button className="profile-btn" onClick={openMenu}>
+            {/* <button className="profile-btn" onClick={openMenu}>
                 <i className="fas fa-user-circle" />
-            </button>
-            {showMenu && (
-                <ul className="profile-dropdown">
-                    <li>{user.username}</li>
-                    <li>{user.email}</li>
-                    <li>
-                        <button onClick={logout} >Log Out</button>
-                    </li>
-                </ul>
-            )}
+            </button> */}
+
+            <ul className="profile-dropdown">
+                <NavLink to={`/users/${id}`}><li>{user.username}</li></NavLink>
+                {/* <li>{user.email}</li> */}
+                <li>
+                    <button onClick={logout} >Log Out</button>
+                </li>
+            </ul>
+
         </div>
     );
 }

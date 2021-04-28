@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { findMatchingCocktails } from '../../store/cocktail';
 import './SearchBar.css';
 
 const SearchBar = ({ cocktails }) => {
 
+    const dispatch = useDispatch();
     const [inputVal, setInputVal] = useState('');
 
     const matches = () => {
@@ -27,6 +30,14 @@ const SearchBar = ({ cocktails }) => {
 
     const results = matches().map((result) => result.name);
     // console.log(results)
+
+    // useEffect(() => {
+    //     if (inputVal.length > 0) {
+    //         return dispatch(findMatchingCocktails(inputVal))
+
+    //     }
+    // }, [inputVal])
+
     return (
         <section >
             <div className="auto">
@@ -36,11 +47,7 @@ const SearchBar = ({ cocktails }) => {
                     value={inputVal}
                     placeholder="Find a cocktail..."
                 />
-                {inputVal.length > 0 && <ul className="auto-dropdown" onClick={(e) => setInputVal(e.target.val)}>
-                    {results.map(result => (
-                        <p>{result}{"\n"}</p>
-                    ))}
-                </ul>}
+
             </div>
         </section>
     );

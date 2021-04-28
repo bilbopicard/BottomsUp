@@ -15,6 +15,20 @@ export const getCocktails = () => async (dispatch) => {
     }
 }
 
+export const findMatchingCocktails = (input) => async (dispatch) => {
+    const response = await fetch('/api/cocktails/')
+
+    if (response.ok) {
+        const list = await response.json();
+
+        const matches = list.map(cocktail => {
+            return cocktail.name.includes(input)
+        })
+
+        dispatch(load(matches))
+    }
+}
+
 export const getOneCocktail = (id) => async (dispatch) => {
     const response = await fetch(`/api/cocktails/${id}`)
 
