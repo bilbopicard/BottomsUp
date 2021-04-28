@@ -26,4 +26,9 @@
 .cocktail-info {
     margin: 5px;
 }
-
+.comments-div {
+    border: 1px solid black;
+    padding-left: 10px;;
+    width: 90%;
+    background-color: grey;
+}
