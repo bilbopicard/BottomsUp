@@ -1,15 +1,17 @@
 .single-cocktail-div {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
 }
 .inner-div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: #f3f4ed;
     width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 .recipe-div {
     background-color:lightgrey;
@@ -24,3 +26,4 @@
 .cocktail-info {
     margin: 5px;
 }
+
