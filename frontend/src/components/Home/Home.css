@@ -1,30 +1,33 @@
 #home-container {
     box-sizing: border-box;
-    margin: 12vh auto 2vh;
+    margin: 8vh auto 0;
     height: 84vh;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     /* border: 2px solid red; */
     border-radius: 5px;
-    background-color: #f3f4ed;
+    /* background-color: #f3f4ed; */
 }
 #featured-cocktail-container {
     text-align: center;
     height: auto;
-    width: 70%;
-    /* border: 2px solid green; */
+    /* left: 0; */
+    width: 80%;
+    margin: auto;
+    /* background-color: rgba(243, 244, 237, 0.5); */
     box-sizing: border-box;
     padding-bottom: 40px;
 }
 .cocktail-search-container {
     border-left: 4px solid #c06014;
-    /* background-color: #f3f4ed; */
+    background-color: #f3f4ed;
     box-sizing: border-box;
     overflow-y: scroll;
-    width: 30%;
-    height: auto;
+    width: 20%;
+    height: 92vh;
     min-width: 240px;
+    right: 0;
 }
 
 ul {
@@ -34,7 +37,7 @@ ul {
     flex-wrap: wrap;
 }
 
-h1 {
+h2 {
     text-align: center;
 }
 

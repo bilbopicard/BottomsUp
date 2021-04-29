@@ -3,9 +3,43 @@
     justify-content: center;
     align-items: center;
 }
-.featured-cocktail-img {
-    width: 30%;
+.featured-div a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: inherit;
+    width: 28%;
 }
+#featured-cocktail-title {
+    margin: 0 0 20px 0px; 
+    width: auto;
+    background-color: white;
+    font-size: 4rem;
+    text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
+}
+.img-div{
+    /* width: 300px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    /* margin: 0 40px; */
+    padding: 10px 20px 20px 20px;
+    border-radius: 2px;
+    background-color: #f3f4ed;
+    border: 1px solid black;
+}
+h4 {
+    margin: 0 auto 8px;
+}
+
+.img-div img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    
+}
+
 .feature-steps {
     text-align: left;
 }
