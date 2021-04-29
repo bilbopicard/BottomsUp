@@ -10,9 +10,10 @@ router.get('/', requireAuth, asyncHandler(async (req, res) => {
             model: Comment,
             include: {
                 model: User
-            }
+            },
         },
-        order: [['name', 'ASC']],
+        order: [['name', 'ASC'], [Comment, 'createdAt', 'ASC']],
+
     });
     // console.log(cocktails)
     return res.json(cocktails);
@@ -21,14 +22,14 @@ router.get('/', requireAuth, asyncHandler(async (req, res) => {
 router.post('/comments', requireAuth, asyncHandler(async (req, res) => {
     // console.log('backend', req.body);
     const { content, cocktailId, userId } = req.body;
-    const newComment = Comment.create({
+    const newComment = await Comment.create({
         content,
         cocktailId,
         userId,
     })
 
-    // console.log(newComment)
-    // return res.json(comment);
+    console.log(newComment)
+    return res.json(newComment);
 }))
 
 module.exports = router;

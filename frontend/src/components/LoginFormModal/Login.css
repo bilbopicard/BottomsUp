@@ -1,0 +1,7 @@
+#login-modal-form {
+    padding: 15px;
+}
+
+#login-errors  {
+    color: red;
+}

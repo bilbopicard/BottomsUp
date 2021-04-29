@@ -31,9 +31,14 @@ function Navigation({ isLoaded }) {
                 <li>
                     <NavLink exact to="/"><h1 className='bottoms-up'>BottomsUp</h1></NavLink>
                 </li>
+
                 <li>
-                    {isLoaded && sessionLinks}
+                    <div className='right-side-nav'>
+                        <NavLink exact to="/about">About</NavLink>
+                        {isLoaded && sessionLinks}
+                    </div>
                 </li>
+
             </ul>
         </nav>
     );

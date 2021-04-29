@@ -43,7 +43,11 @@ nav a:hover {
 .profile-div {
     display: flex;
 }
-
+.right-side-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
 .active {
     font-weight: bold;
 }

@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <Navigation isLoaded={isLoaded} />
+
       {isLoaded && (
         <Switch>
           <Route path='/' exact>
@@ -30,6 +31,7 @@ function App() {
           </Route>
         </Switch>
       )}
+
     </>
   );
 }

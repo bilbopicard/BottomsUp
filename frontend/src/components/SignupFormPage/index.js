@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
+import { Modal } from '../../context/Modal';
+import LoginForm from '../LoginFormModal/LoginForm';
 import './SignupForm.css';
 
 function SignupFormPage() {
@@ -12,6 +14,7 @@ function SignupFormPage() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [errors, setErrors] = useState([]);
+    const [showModal, setShowModal] = useState(false);
 
     if (sessionUser) return <Redirect to="/" />;
 
@@ -30,6 +33,7 @@ function SignupFormPage() {
 
     return (
         <div id='form-div'>
+            <h2>Join the world of cocktails</h2>
             <form onSubmit={handleSubmit}>
                 <ul>
                     {errors.map((error, idx) => <li key={idx}>{error}</li>)}
@@ -72,6 +76,16 @@ function SignupFormPage() {
                 </label>
                 <button id='signup' type="submit">Sign Up</button>
             </form>
+            <div className='bottom-login-btn'>
+
+                <p>Already have an account? <button id='login-btn' onClick={() => setShowModal(true)}>Log In</button></p>
+                {showModal && (
+                    <Modal onClose={() => setShowModal(false)}>
+                        <LoginForm />
+                    </Modal>
+                )}
+            </div>
+
         </div>
     );
 }

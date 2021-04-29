@@ -1,21 +1,22 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { getCocktails } from '../../store/cocktail';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Cocktail from '../Cocktail';
 import Search from '../Search';
 import FeaturedCocktail from '../FeaturedCocktail';
 import './Home.css';
-
+import { Redirect } from 'react-router-dom';
 export default function Homepage() {
 
+    const sessionUser = useSelector(state => state.session.user)
 
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getCocktails());
     }, [dispatch])
 
-
+    if (!sessionUser) {
+        return <Redirect to='/signup' />
+    }
 
     return (
         <div id="home-container">
@@ -24,7 +25,7 @@ export default function Homepage() {
                 <FeaturedCocktail />
             </div>
             <div className="cocktail-search-container">
-                <h1>Cocktails</h1>
+                <h2>Cocktails</h2>
                 <Search />
             </div>
 
