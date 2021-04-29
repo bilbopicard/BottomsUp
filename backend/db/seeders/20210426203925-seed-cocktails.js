@@ -60,7 +60,7 @@ module.exports = {
       },
       {
         name: 'Mojito',
-        recipe: '2oz rum, 1oz simple syrup. .75oz lime juice, 5 - 8 mint leaves, soda water',
+        recipe: '2oz rum, 1oz simple syrup, .75oz lime juice, 5 - 8 mint leaves, soda water',
         description: 'Place rum, simple syrup, lime juice, and mint into a shaker. Add ice and shake until chilled.  Dump into a highball glass. Top with soda water and garnish with a lime wedge and/or a mint sprig',
         userId: 1,
         imageUrl: 'https://images.unsplash.com/photo-1601644417451-467f8bbfa767?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
@@ -135,6 +135,7 @@ module.exports = {
         recipe: '2oz vodka, 1oz Kahlua, 1oz cream',
         description: 'Pour vodka and Kahlua in to an old fashioned glass filled with ice. Top with cream',
         userId: 1,
+        imageUrl: 'https://cdn.pixabay.com/photo/2019/06/22/01/16/white-russian-4290606_1280.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },

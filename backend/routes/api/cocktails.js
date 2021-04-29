@@ -4,13 +4,31 @@ const { Cocktail, Comment, User } = require('../../db/models');
 const { requireAuth } = require('../../utils/auth');
 const router = express.Router();
 
-router.get('/', requireAuth, asyncHandler(async function (req, res) {
+router.get('/', requireAuth, asyncHandler(async (req, res) => {
     const cocktails = await Cocktail.findAll({
-        include: Comment,
+        include: {
+            model: Comment,
+            include: {
+                model: User
+            }
+        },
         order: [['name', 'ASC']],
     });
     // console.log(cocktails)
     return res.json(cocktails);
 }));
+
+router.post('/comments', requireAuth, asyncHandler(async (req, res) => {
+    // console.log('backend', req.body);
+    const { content, cocktailId, userId } = req.body;
+    const newComment = Comment.create({
+        content,
+        cocktailId,
+        userId,
+    })
+
+    // console.log(newComment)
+    // return res.json(comment);
+}))
 
 module.exports = router;

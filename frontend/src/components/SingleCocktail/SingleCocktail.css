@@ -28,7 +28,20 @@
 }
 .comments-div {
     border: 1px solid black;
-    padding-left: 10px;;
+    padding: 0 10px;
     width: 90%;
     background-color: grey;
+}
+.single-comment-div {
+    background-color: #f3f4ed;
+}
+#comment-form {
+    width: 70%;
+    margin: auto;
+}
+#comment-form button {
+    width: 50%;
+    height: 50px;
+    font-size: 1.3rem;
+    margin: 20px auto;
 }

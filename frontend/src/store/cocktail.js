@@ -1,3 +1,5 @@
+import { csrfFetch } from './csrf';
+
 const POPULATE = 'cocktail/POPULATE';
 
 const load = (list) => ({
@@ -5,14 +7,23 @@ const load = (list) => ({
     list
 })
 
+
 export const getCocktails = () => async (dispatch) => {
-    const response = await fetch('/api/cocktails')
+    const response = await csrfFetch('/api/cocktails')
 
     if (response.ok) {
         const list = await response.json();
+        console.log('inside get cocktails', list)
         // console.log(list)
         dispatch(load(list))
     }
+}
+export const addComment = (comment) => async (dispatch) => {
+    // console.log('inside add comment', comment);
+    const response = await csrfFetch('/api/cocktails/comments', {
+        method: 'POST',
+        body: JSON.stringify(comment)
+    });
 }
 
 export const findMatchingCocktails = (input) => async (dispatch) => {
