@@ -165,6 +165,79 @@ module.exports = {
         imageUrl: 'https://images.unsplash.com/photo-1513416543495-10c173ed9908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2500&q=80',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        name: 'The Last Word',
+        recipe: '.75oz gin, .75oz Luxardo maraschino liqueur, .75oz Green Chartreuse, .75oz lime juice',
+        description: 'Place all ingredients into a cocktail shaker. Add ice and shake untill chilled. Strain into a cocktail glass. Garnish with a luxardo cherry or a lime wedge',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1576670393064-0063c3492d38?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fGdyZWVuJTIwY29ja3RhaWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Irish Coffee',
+        recipe: '2oz Irish whiskey, 2 sugar cubes or .5oz simple syrup, coffee, whipped cream',
+        description: 'Place whiskey, sugar cubes or simple syrup, and hot coffee into a mug. If using sugar cubes stir until dissolved. Top with whipped cream',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1549057219-0c0be1287566?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Hot Toddy',
+        recipe: '2oz whiskey, .75oz lemon juice, 1oz honey syrup or tablespoon of honey, hot water',
+        description: 'Place whiskey, lemon juice, honey or honey syrup, and hot water into a mug. Stir until honey is dissolved. Garnish with a lemon wedge',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1585777786852-51917fc4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+
+      },
+      {
+        name: 'French 75',
+        recipe: '1oz gin, .5oz lemon juice, .5oz simple syrup, sparkling wine',
+        description: 'Place gin, lemon juice, and simple syrup into a cocktail shaker. Add ice and shake until chilled. Strain into a champagne flute and top with sparkling wine. Garnish with a lemon wedge',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1556881321-a31c0ac6645b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Cosmopolitan',
+        recipe: '2oz citrus vodka, .75oz triple sec, .5oz lime juice, .5oz cranberry juice',
+        description: 'Place all ingredients into a cocktail shaker. Add ice and shake until chilled. Strain into a cocktail glass. Garnish with a lemon wedge',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1556881261-e41e8db21055?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Daiquiri',
+        recipe: '2oz light rum, .75oz lime juice, .75oz simple syrup',
+        description: 'Place all ingredients into a cocktail shaker. Add ice and shake until chilled. Strain into a cocktail glass. Garnish with a lime wedge',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1602748708246-9c25a4b578a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Boston Sour',
+        recipe: '2oz whiskey, .75oz lemon juice, .75oz simple syrup, egg white',
+        description: 'Place all ingredients into a cocktail shaker. Shake without ice to froth egg white first. Add ice and shake until chilled. Strain into a glass of your choice. Garnish with a lemon wedge',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1594655885211-f9985d98a4c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=646&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Bloody Mary',
+        recipe: '2oz vodka, bloody mary mix',
+        description: 'Fill a pint with ice and pour in vodka. Add bloody mary mix. Garnish as elaborately as you desire.',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1601609049827-e557cab443d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ], {});
   },
