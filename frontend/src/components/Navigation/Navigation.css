@@ -1,8 +1,8 @@
 nav {  
+    color: #424642;
     position: fixed;
     top: 0;
     background-color: #f3f4ed;
-    /* padding: 10px 0; */
     height: 8vh;
     width: 100%;
     display: flex;
@@ -17,16 +17,20 @@ nav {
     width: 90%;
     height: 100%;
     margin: 0;
-    /* border: 2px solid green; */
 }
 .bottoms-up {
-    /* border: 2px solid red; */
-    /* font-weight: normal; */
+    font-weight: normal;
     padding: 0;
     margin: 0;
     font-size: 2rem;
     /* position: absolute; */
+    text-decoration: underline;
+    text-decoration-color: #c06014;
     left: 40%;
+}
+
+.bottoms-up:hover {
+    text-decoration: none;
 }
 
 ul li {
@@ -36,10 +40,7 @@ li a {
     text-decoration: none;
     color: inherit;
 }
-nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: #c06014;
-}
+
 .profile-div {
     display: flex;
 }

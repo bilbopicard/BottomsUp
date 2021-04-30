@@ -21,11 +21,10 @@ export default function Homepage() {
     return (
         <div id="home-container">
             <div id="featured-cocktail-container">
-                {/* <h2>I'm a featured cocktail</h2> */}
                 <FeaturedCocktail />
             </div>
             <div className="cocktail-search-container">
-                <h2>Cocktails</h2>
+                <h2 id="cocktail-search-title">Cocktails</h2>
                 <Search />
             </div>
 

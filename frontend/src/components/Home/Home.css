@@ -1,7 +1,7 @@
 #home-container {
     box-sizing: border-box;
     margin: 8vh auto 0;
-    height: 84vh;
+    height: 82vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -11,14 +11,13 @@
 }
 #featured-cocktail-container {
     text-align: center;
-    height: auto;
-    /* left: 0; */
-    width: 80%;
+    height: 100%;
+    width: 80%; 
     margin: auto;
-    /* background-color: rgba(243, 244, 237, 0.5); */
     box-sizing: border-box;
     padding-bottom: 40px;
 }
+
 .cocktail-search-container {
     border-left: 4px solid #c06014;
     background-color: #f3f4ed;
@@ -39,6 +38,7 @@ ul {
 
 h2 {
     text-align: center;
+    color: #424642;
 }
 
 .cocktail-link {
@@ -51,6 +51,7 @@ h2 {
     font-size: 1.2rem;
     padding: 5px;
 }
+
 .search-div {
     display: flex;
     justify-content: center;
