@@ -6,24 +6,27 @@
 }
 #about-inner-div {
     /* border: 2px solid red; */
-    width: 80%;
+    width: 50%;
     margin-top: 3vh;
-    height: 30vh;
+    /* height: auto; */
     background-color: #f3f4ed;
     display: flex;
     box-sizing: border-box;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     overflow-y: scroll;
+    border-radius: 4px;
 }
-/* #about-inner-div p {
-    height: 100%;
-    margin-bottom: 30px;
-} */
+#about-right-div {
+    margin: 10px;
+}
+#about-links a {
+    margin-right: 20px;
+    color: inherit;
+}
+#about-links a:hover {
+    font-weight: bold;
+}
 #img-div-about {
     min-width: 200px;
     padding: 20px;
-    /* border: 4px solid red; */
 }
-/* #about-pic {
-    width: 60%;
-} */

@@ -1,20 +1,11 @@
-import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './FeaturedCocktail.css';
 
 function FeaturedCocktail() {
-    // const [cocktail, setCocktail] = useState('');
-    // let randomNum1 = Math.floor(Math.random() * 8 + 1);
-    // let randomNum2 = Math.floor(Math.random() * 8 + 9);
-    // let randomNum3 = Math.floor(Math.random() * 8 + 18);
     const cocktail1 = useSelector(state => state.cocktails[12]);
-    // const cocktail = cocktails[randomNum];
     const cocktail2 = useSelector(state => state.cocktails[7]);
     const cocktail3 = useSelector(state => state.cocktails[14]);
-    // console.log(randomNum)
-
-    // console.log(cocktail);
 
     return (
         <>

@@ -28,7 +28,7 @@ router.post('/comments', requireAuth, asyncHandler(async (req, res) => {
         userId,
     })
 
-    console.log(newComment)
+    // console.log(newComment)
     return res.json(newComment);
 }))
 
