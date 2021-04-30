@@ -6,6 +6,7 @@ import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Homepage from "./components/Home";
 import About from './components/About';
+import Profile from './components/Profile';
 import SingleCocktail from './components/SingleCocktail';
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path='/about'>
             <About />
+          </Route>
+          <Route path='/users/:id'>
+            <Profile />
           </Route>
         </Switch>
       )}
