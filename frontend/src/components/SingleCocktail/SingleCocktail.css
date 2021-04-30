@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    color: #424642;
 }
 .recipe-div {
     background-color:lightgrey;
@@ -25,6 +26,7 @@
 }
 .cocktail-info {
     margin: 5px;
+    
 }
 .comments-div {
     border: 1px solid black;

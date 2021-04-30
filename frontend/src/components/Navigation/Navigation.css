@@ -23,14 +23,13 @@ nav {
     padding: 0;
     margin: 0;
     font-size: 2rem;
-    /* position: absolute; */
     text-decoration: underline;
     text-decoration-color: #c06014;
     left: 40%;
 }
 
 .bottoms-up:hover {
-    text-decoration: none;
+    /* color: #c06014; */
 }
 
 ul li {
