@@ -31,5 +31,15 @@ router.post('/comments', requireAuth, asyncHandler(async (req, res) => {
     // console.log(newComment)
     return res.json(newComment);
 }))
+router.delete('/comments/:id', requireAuth, asyncHandler(async (req, res) => {
+    console.log(req.params)
+    const { id } = req.params;
+    console.log('backend', id)
+    const deleted = await Comment.destroy({
+        where: { id }
+    })
+
+    return res.json(deleted);
+}))
 
 module.exports = router;

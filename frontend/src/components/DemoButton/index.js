@@ -12,7 +12,7 @@ function DemoButton() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <button type='submit' className='nav-page-btn'>Demo User</button>
+            <button type='submit' className='nav-page-btn' id='demo-user-nav-btn'>Demo User</button>
         </form>
     )
 }

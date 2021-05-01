@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
@@ -12,6 +12,7 @@ import SingleCocktail from './components/SingleCocktail';
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
+  const history = useHistory();
   useEffect(() => {
     dispatch(sessionActions.restoreUser()).then(() => setIsLoaded(true));
   }, [dispatch]);
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path='/users/:id'>
             <Profile />
+          </Route>
+          <Route path='/' >
+            {history.push('/signup')}
           </Route>
         </Switch>
       )}
