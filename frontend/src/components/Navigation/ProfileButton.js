@@ -31,20 +31,10 @@ function ProfileButton({ user }) {
     };
 
     return (
-        <div className="profile-div">
-            {/* <button className="profile-btn" onClick={openMenu}>
-                <i className="fas fa-user-circle" />
-            </button> */}
-
-            <ul className="profile-dropdown">
-                <NavLink to={`/users/${id}`}><li>{user.username}</li></NavLink>
-                {/* <li>{user.email}</li> */}
-                <li>
-                    <button onClick={logout} >Log Out</button>
-                </li>
-            </ul>
-
-        </div>
+        <>
+            <NavLink to={`/users/${id}`} className='nav-page-btn'>My Profile</NavLink>
+            <button onClick={logout} className='nav-page-btn'>Log Out</button>
+        </>
     );
 }
 

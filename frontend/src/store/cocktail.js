@@ -25,7 +25,7 @@ export const addComment = (comment) => async (dispatch) => {
     });
     if (response.ok) {
         // console.log('comment response ok');
-        const comment = await response.json();
+        // const comment = await response.json();
         // console.log(comment);
         dispatch(getCocktails());
     }

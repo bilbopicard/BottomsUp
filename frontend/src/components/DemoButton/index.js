@@ -8,12 +8,11 @@ function DemoButton() {
     const handleSubmit = (e) => {
         e.preventDefault();
         return dispatch(login({ credential: 'Demo-lition', password: 'password' }))
-
     }
 
     return (
         <form onSubmit={handleSubmit}>
-            <button type='submit'>Demo</button>
+            <button type='submit' className='nav-page-btn'>Demo User</button>
         </form>
     )
 }

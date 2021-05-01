@@ -28,10 +28,6 @@ nav {
     left: 40%;
 }
 
-.bottoms-up:hover {
-    /* color: #c06014; */
-}
-
 ul li {
     list-style-type: none;
 }
@@ -45,9 +41,25 @@ li a {
 }
 .right-side-nav {
     display: flex;
-    justify-content: space-around;
-    width: 300px;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    width: 30vw;
+    min-width: 300px;
+    /* border: 2px solid red; */
 }
 .active {
     font-weight: bold;
 }
+
+.nav-page-btn {
+    color: #424642;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+}
+.nav-page-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #c06014;
+} 

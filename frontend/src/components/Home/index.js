@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { getCocktails } from '../../store/cocktail';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Search from '../Search';
 import FeaturedCocktail from '../FeaturedCocktail';
 import './Home.css';

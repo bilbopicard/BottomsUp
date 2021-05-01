@@ -20,7 +20,8 @@
     text-align: center;
     margin: auto;
     padding: 20px 0;
-    border-bottom: 1px solid black;
+    color: #424642;
+    border-bottom: 1px solid #424642;;
     width: 70%;
 }
 #profile-container h2 {
@@ -35,6 +36,7 @@
 #profile-comments {
     margin: 0 auto;
     width: 74%;
+    color: #424642;
 }
 .inner-profile-container {
     width: 90%;

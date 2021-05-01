@@ -20,7 +20,7 @@ function Navigation({ isLoaded }) {
             <>
                 <DemoButton />
                 <LoginFormModal />
-                <NavLink to="/signup">Sign Up</NavLink>
+                <NavLink to="/signup" className='nav-page-btn'>Sign Up</NavLink>
             </>
         );
     }
@@ -34,13 +34,13 @@ function Navigation({ isLoaded }) {
 
                 <li>
                     <div className='right-side-nav'>
-                        <NavLink exact to="/about">About</NavLink>
+                        <NavLink exact to="/about" className='nav-page-btn'>About</NavLink>
                         {isLoaded && sessionLinks}
                     </div>
                 </li>
 
             </ul>
-        </nav>
+        </nav >
     );
 }
 

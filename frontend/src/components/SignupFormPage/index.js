@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 import { Modal } from '../../context/Modal';
 import LoginForm from '../LoginFormModal/LoginForm';
-import video from './bottomsup.mp4';
+
 import './SignupForm.css';
 
 function SignupFormPage() {

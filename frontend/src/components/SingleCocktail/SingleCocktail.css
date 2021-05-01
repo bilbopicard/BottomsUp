@@ -47,6 +47,10 @@
     font-size: 1.3rem;
     margin: 20px auto;
 }
+#form-comment-add{
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
 .ingredients {
     padding: 0;
     margin: 5px auto 0;
