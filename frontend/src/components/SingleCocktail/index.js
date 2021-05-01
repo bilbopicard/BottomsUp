@@ -1,10 +1,11 @@
-import { useParams, Redirect, useHistory } from 'react-router-dom';
+import { useParams, useHistory, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getCocktails, addComment } from '../../store/cocktail';
+import { getCocktails, addComment, deleteComment } from '../../store/cocktail';
 import './SingleCocktail.css';
 
 export default function SingleCocktail() {
+
 
     const sessionUser = useSelector(state => state.session.user);
     const history = useHistory();
@@ -12,8 +13,8 @@ export default function SingleCocktail() {
     const { id } = useParams();
     const cocktail = useSelector(state => state.cocktails[id]);
     const cocktailComments = useSelector(state => state.cocktails[id]?.Comments);
-    const sessionUserId = useSelector(state => state.session.user.id);
-
+    const sessionUserId = useSelector(state => state.session.user?.id);
+    // console.log(cocktailComments);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getCocktails());
@@ -21,6 +22,37 @@ export default function SingleCocktail() {
 
     if (!sessionUser) {
         history.push('/');
+    }
+
+    const niceDateFormat = (createdAt) => {
+        let d = new Date(createdAt),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear(),
+            hh = d.getHours(),
+            m = d.getMinutes(),
+            s = d.getSeconds();
+
+        let dd = "AM";
+        let h = hh;
+        if (h >= 12) {
+            h = hh - 12;
+            dd = "PM";
+        }
+        if (h === 0) {
+            h = 12;
+        }
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+
+        return [[month, day, year].join('-'), ' ', [h, m].join(':'), ' ', dd];
+    }
+
+    const handleDelete = (e) => {
+        e.preventDefault();
+        const { id } = e.target;
+        console.log(id)
+        dispatch(deleteComment({ id }));
     }
 
     const handleSubmit = (e) => {
@@ -53,12 +85,18 @@ export default function SingleCocktail() {
                 <div className='comments-div'>
                     {cocktailComments?.length ? cocktailComments?.map(comment => (
                         <div className='single-comment-div' key={comment.id}>
-                            <p>{comment.User.username}</p>
-                            <p >{comment.content}</p>
+                            {console.log(comment)}
+                            <p id='comment-user'><Link to={`/users/${comment.userId}`}>{comment.User.username}</Link></p>
+                            <p id='comment-content'>{comment.content}</p>
+                            <div id='delete-time'>
+                                <p id='comment-date'>{niceDateFormat(comment.createdAt)}</p>
+                                {sessionUserId === comment.userId ? <button type='submit' onClick={handleDelete} id={comment.id}>Delete comment</button> : null}
+                            </div>
+
                         </div>
                     )) : <p>No comments yet...</p>}
                     <form id='comment-form' onSubmit={handleSubmit}>
-                        <textarea name="comment" id="form-comment-add" rows="5"></textarea>
+                        <textarea name="comment" id="form-comment-add" rows="5" required></textarea>
                         <button type='submit'>Add comment</button>
                     </form>
                 </div>

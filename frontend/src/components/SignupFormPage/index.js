@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 import { Modal } from '../../context/Modal';
 import LoginForm from '../LoginFormModal/LoginForm';
+import { login } from '../../store/session';
 
 import './SignupForm.css';
 
@@ -18,6 +19,11 @@ function SignupFormPage() {
     const [showModal, setShowModal] = useState(false);
 
     if (sessionUser) return <Redirect to="/" />;
+
+    const handleDemoLogin = (e) => {
+        e.preventDefault();
+        return dispatch(login({ credential: 'Demo-lition', password: 'password' }))
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -80,7 +86,7 @@ function SignupFormPage() {
             </form>
             <div className='bottom-login-btn'>
 
-                <p>Already have an account? <button id='login-btn' onClick={() => setShowModal(true)}>Log In</button></p>
+                <p>Already have an account? <button id='login-btn' onClick={() => setShowModal(true)}>Log In</button><button id='demo-user-btn' onClick={handleDemoLogin}>Demo User</button></p>
                 {showModal && (
                     <Modal onClose={() => setShowModal(false)}>
                         <LoginForm />

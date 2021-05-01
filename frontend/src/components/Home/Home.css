@@ -5,9 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* border: 2px solid red; */
     border-radius: 5px;
-    /* background-color: #f3f4ed; */
 }
 #featured-cocktail-container {
     text-align: center;
@@ -55,4 +53,16 @@ h2 {
 .search-div {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    #featured-cocktail-container {
+        display: none;
+    }
+    #home-container {
+        margin-top:12vh;
+    }
+    .cocktail-search-container {
+        width: 100%;
+    }
 }

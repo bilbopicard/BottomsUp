@@ -13,14 +13,17 @@ function Navigation({ isLoaded }) {
     let sessionLinks;
     if (sessionUser) {
         sessionLinks = (
-            <ProfileButton user={sessionUser} />
+            <>
+                <NavLink exact to="/about" className='nav-page-btn'>About</NavLink>
+                <ProfileButton user={sessionUser} />
+            </>
         );
     } else {
         sessionLinks = (
             <>
                 <DemoButton />
                 <LoginFormModal />
-                <NavLink to="/signup" className='nav-page-btn'>Sign Up</NavLink>
+                <NavLink to="/signup" className='nav-page-btn' id='signup-btn'>Sign Up</NavLink>
             </>
         );
     }
@@ -34,7 +37,7 @@ function Navigation({ isLoaded }) {
 
                 <li>
                     <div className='right-side-nav'>
-                        <NavLink exact to="/about" className='nav-page-btn'>About</NavLink>
+
                         {isLoaded && sessionLinks}
                     </div>
                 </li>

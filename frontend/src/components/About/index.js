@@ -1,6 +1,14 @@
+import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import './About.css';
 
+
 function About() {
+    const sessionUser = useSelector(state => state.session.user);
+    const history = useHistory();
+    if (!sessionUser) {
+        history.push('/');
+    }
     return (
         <div id='about-container'>
             <div id='about-inner-div'>

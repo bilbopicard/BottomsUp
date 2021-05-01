@@ -17,6 +17,20 @@ export const getCocktails = () => async (dispatch) => {
     }
 }
 
+export const deleteComment = (commentObj) => async (dispatch) => {
+    const { id } = commentObj;
+    // console.log('in delete comment', id);
+
+    const response = await csrfFetch(`/api/cocktails/comments/${id}`, {
+        method: 'DELETE'
+    });
+
+    if (response.ok) {
+        console.log('in delete comment and deleted')
+        dispatch(getCocktails());
+    }
+}
+
 export const addComment = (comment) => async (dispatch) => {
     // console.log('inside add comment', comment);
     const response = await csrfFetch('/api/cocktails/comments', {
@@ -24,9 +38,6 @@ export const addComment = (comment) => async (dispatch) => {
         body: JSON.stringify(comment)
     });
     if (response.ok) {
-        // console.log('comment response ok');
-        // const comment = await response.json();
-        // console.log(comment);
         dispatch(getCocktails());
     }
 
