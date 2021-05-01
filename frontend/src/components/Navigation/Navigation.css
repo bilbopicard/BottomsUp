@@ -79,8 +79,8 @@ li a {
 }
 #demo-user-nav-btn:hover {
     color: #f3f4ed;
-    border: 2px solid #c06014;
-    background-color:#424642;
+    /* border: 2px solid #c06014; */
+    background-color:#d37324;
     text-decoration: none;
     /* background-color: #424642; */
 }

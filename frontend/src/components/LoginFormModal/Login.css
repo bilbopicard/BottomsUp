@@ -1,7 +1,25 @@
 #login-modal-form {
-    padding: 15px;
+    padding: 0 15px 15px 15px;
 }
-
+#login-modal-form input {
+    font-family: 'Open Sans', sans-serif;
+    padding: 3px;
+    font-size: 1rem;
+}
 #login-errors  {
     color: red;
+}
+#login-modal-btn {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    background-color: #c06014;
+    width: 20%;
+    font-size: 1.1rem;
+    color: #f3f4ed;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+#login-modal-btn:hover {
+    cursor: pointer;
+    background-color: #d37324;
 }
