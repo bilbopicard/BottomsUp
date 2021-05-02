@@ -5,7 +5,7 @@ import './FeaturedCocktail.css';
 function FeaturedCocktail() {
     const cocktail1 = useSelector(state => state.cocktails[12]);
     const cocktail2 = useSelector(state => state.cocktails[7]);
-    const cocktail3 = useSelector(state => state.cocktails[14]);
+    const cocktail3 = useSelector(state => state.cocktails[27]);
 
     return (
         <>
@@ -15,20 +15,20 @@ function FeaturedCocktail() {
                 <div className="featured-div">
                     <Link to={`/cocktails/${cocktail1?.id}`}>
                         <div className="img-div">
-                            <h3>{cocktail1?.name}</h3>
+                            <h2>{cocktail1?.name}</h2>
                             <img src={cocktail1?.imageUrl} alt="" className='featured-cocktail-img' />
                         </div>
                     </Link>
                     <Link to={`/cocktails/${cocktail2?.id}`} >
                         <div className="img-div">
-                            <h3>{cocktail2?.name}</h3>
+                            <h2>{cocktail2?.name}</h2>
 
                             <img src={cocktail2?.imageUrl} alt="" className='featured-cocktail-img' />
                         </div>
                     </Link>
                     <Link to={`/cocktails/${cocktail3?.id}`} >
                         <div className="img-div">
-                            <h3>{cocktail3?.name}</h3>
+                            <h2>{cocktail3?.name}</h2>
 
                             <img src={cocktail3?.imageUrl} alt="" className='featured-cocktail-img' />
                         </div>

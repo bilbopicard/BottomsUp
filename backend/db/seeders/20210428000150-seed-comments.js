@@ -88,6 +88,55 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        content: 'MMMMMMM. Yum',
+        cocktailId: 9,
+        userId: 6,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        content: 'this really was a good time',
+        cocktailId: 10,
+        userId: 5,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        content: 'Holy smokes need another',
+        cocktailId: 11,
+        userId: 4,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        content: 'Kinda sweet for me',
+        cocktailId: 12,
+        userId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        content: 'This is now my favorite drink in the world',
+        cocktailId: 13,
+        userId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        content: 'Yeah.... this is good',
+        cocktailId: 13,
+        userId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        content: 'Made this for a recent family gathering. It was a hit',
+        cocktailId: 8,
+        userId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
     ], {});
   },
 

@@ -24,19 +24,24 @@
     border-bottom: 4px solid #c06014;
 }
 .img-div{
-    color: #424642;
+    /* color: #424642; */
     overflow: hidden;
-    padding: 10px 20px 20px 20px;
-    border-radius: 2px;
+    padding: 5px 20px 20px 20px;
+    border-radius: 5px;
     background-color: #f3f4ed;
     border: 1px solid black;
 }
 .img-div:hover {
+
     background-color: #c06014;
+}
+.img-div:hover h2{
     color: #f3f4ed;
 }
-.img-div h3 {
+.img-div h2 {
     margin: 0 auto 8px;
+    color: #424642;
+    font-weight: normal;
 }
 
 .img-div img {
@@ -44,6 +49,9 @@
     min-width: 100%;
     min-height: 100%;
     object-fit: contain;
+    border-radius: 3px;
+    border: 1px solid #424642;
+    /* box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.4); */
 }
 
 .feature-steps {

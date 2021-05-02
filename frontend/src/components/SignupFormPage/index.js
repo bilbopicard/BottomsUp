@@ -42,9 +42,9 @@ function SignupFormPage() {
         <div id='form-div'>
             {/* <video muted loop autostart autoPlay={true} src={video} type='video/mp4' /> */}
             <div id='logo-container'>
-                <img src="./centered-logo.svg" alt="" />
+                <img src="./new-svg.svg" alt="" />
             </div>
-            <h2>Join the world of cocktails</h2>
+            <h2>You're gonna have a good time</h2>
             <form id='signup-form' onSubmit={handleSubmit}>
                 <ul id='signup-errors'>
                     {errors.map((error, idx) => <li key={idx}>{error}</li>)}

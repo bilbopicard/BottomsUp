@@ -50,6 +50,7 @@ li a {
     min-width: 300px;
     /* border: 2px solid red; */
 }
+
 .active {
     font-weight: bold;
 }
@@ -84,6 +85,7 @@ li a {
     text-decoration: none;
     /* background-color: #424642; */
 }
+
 
 @media screen and (max-width: 600px) {
     nav {

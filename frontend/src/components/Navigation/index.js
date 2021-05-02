@@ -31,10 +31,12 @@ function Navigation({ isLoaded }) {
     return (
         <nav>
             <ul className='nav-list'>
-                <li>
-                    <NavLink exact to="/"><h1 className='bottoms-up'>BottomsUp</h1></NavLink>
-                </li>
 
+                <li>
+
+                    <NavLink exact to="/"><h1 className='bottoms-up'>BottomsUp</h1></NavLink>
+
+                </li>
                 <li>
                     <div className='right-side-nav'>
 

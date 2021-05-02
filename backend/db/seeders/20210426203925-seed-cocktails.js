@@ -233,9 +233,45 @@ module.exports = {
       {
         name: 'Bloody Mary',
         recipe: '2oz vodka, bloody mary mix',
-        description: 'Fill a pint with ice and pour in vodka. Add bloody mary mix. Garnish as elaborately as you desire.',
+        description: 'Fill a pint with ice and pour in vodka. Add bloody mary mix. Garnish as elaborately as you desire',
         userId: 1,
         imageUrl: 'https://images.unsplash.com/photo-1601609049827-e557cab443d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Jack Rose',
+        recipe: '2oz applejack, 1oz lemon juice, .5oz grenadine',
+        description: 'Place all ingredients into a shaker. Add ice and shake until chilled. Strain into a cocktail glass. Garnish with a lemon twist',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1559842590-3696b9eb73b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTExfHxyZWQlMjBjb2NrdGFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Lemon Drop',
+        recipe: '2oz vodka, .75oz simple syrup, .75oz lemon juice, sugar',
+        description: 'Place vodka, simple syrup, and lemon juice into a cocktail shaker. Add ice and shake until chilled. Strain into a sugar rimmed cocktail glass. Garnish with a lemon wedge',
+        userId: 1,
+        imageUrl: 'https://cdn.pixabay.com/photo/2017/01/13/22/07/lemon-drop-1978350_1280.jpg',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Mai Tai',
+        recipe: '1oz light rum, 1oz dark rum, 1oz lime juice, .75oz triple sec, .5oz orgeat',
+        description: 'Place all ingredients into a shaker. Add ice and shake until chilled. Dump shaker contents, including ice, into and old fashioned glass. Garnish with a lime wedge and a mint spring',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1583743946281-20e633533a2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Aviation',
+        recipe: '2oz gin, .75oz lemon juice, .5oz maraschino liqueur, .25oz Crème de Violette',
+        description: 'Place all ingredients into a shaker. Add ice and shake until chilled. Strain into a cocktail glass. Garnish with a lemon twist',
+        userId: 1,
+        imageUrl: 'https://images.unsplash.com/photo-1527761939622-9119094630cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
         createdAt: new Date(),
         updatedAt: new Date()
       }
