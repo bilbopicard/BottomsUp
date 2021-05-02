@@ -7,8 +7,8 @@
     overflow-y: scroll;
 }
 #border-div {
-    padding: 10px;
-    background-color: #f3f4ed;
+    padding: 0;
+    background-color: #c06014;
     display: flex;
     border-radius: 3px;
 } 
@@ -19,7 +19,7 @@
 #profile-title {
     text-align: center;
     margin: auto;
-    padding: 20px 0;
+    padding: 12px 0;
     color: #424642;
     border-bottom: 1px solid #424642;;
     width: 70%;
@@ -31,21 +31,38 @@
 }
 #profile-container h3 {
     margin-top: 5px;
+    margin-bottom: 0px;
     text-decoration: underline;
 }
 #profile-comments {
-    margin: 0 auto;
-    width: 74%;
+    /* margin: 0 0 0 10px; */
+    padding-left: 10px;
+    width: 100%;
     color: #424642;
+    background-color: white;
+}
+#profile-comments p {
+    margin-top: 5px;
+    padding-left: 20px;
 }
 .inner-profile-container {
     width: 90%;
     margin: 20px auto;
     background-color: #424642;
-    padding: 14px;
+    padding: 6px;
     border-radius: 2px;
 }
 .inner-profile-container img {
     width: 100px;
     height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    #profile-container {
+        width: 100vw;
+    }
+    .inner-profile-container {
+        width: 90vw;
+        margin: 10px;
+    }
 }

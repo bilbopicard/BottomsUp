@@ -43,7 +43,7 @@ function Profile() {
 
     return (
         <div id='profile-container'>
-            <h1 id='profile-title'>{currentProfileUser?.username}</h1>
+            <h1 id='profile-title'>{currentProfileUser?.username}'s Profile</h1>
             <h2>Comments left on cocktails...</h2>
             {filteredComments.map(comment => (
                 <div key={comment.id} className='inner-profile-container'>
