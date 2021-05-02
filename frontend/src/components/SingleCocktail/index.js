@@ -85,18 +85,19 @@ export default function SingleCocktail() {
                 <div className='comments-div'>
                     {cocktailComments?.length ? cocktailComments?.map(comment => (
                         <div className='single-comment-div' key={comment.id}>
-                            {console.log(comment)}
-                            <p id='comment-user'><Link to={`/users/${comment.userId}`}>{comment.User.username}</Link></p>
+                            <div id='comment-top-row'>
+                                <p id='comment-user'><Link to={`/users/${comment.userId}`}>{comment.User.username}</Link></p>
+                                <span id='comment-date'>{niceDateFormat(comment.createdAt)}</span>
+                            </div>
                             <p id='comment-content'>{comment.content}</p>
                             <div id='delete-time'>
-                                <p id='comment-date'>{niceDateFormat(comment.createdAt)}</p>
-                                {sessionUserId === comment.userId ? <button type='submit' onClick={handleDelete} id={comment.id}>Delete comment</button> : null}
+                                {sessionUserId === comment.userId ? <button type='submit' onClick={handleDelete} id={comment.id}>Delete</button> : null}
                             </div>
 
                         </div>
                     )) : <p>No comments yet...</p>}
                     <form id='comment-form' onSubmit={handleSubmit}>
-                        <textarea name="comment" id="form-comment-add" rows="5" required></textarea>
+                        <textarea name="comment" id="form-comment-add" rows="4" required></textarea>
                         <button type='submit'>Add comment</button>
                     </form>
                 </div>

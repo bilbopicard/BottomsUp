@@ -15,31 +15,37 @@
     color: #424642;
 }
 .recipe-div {
-    background-color:lightgrey;
+    /* background-color:lightgrey; */
+    box-shadow: 0 0 3px 3px lightgrey;
     text-align: center;
-    margin-top:10px;
+    margin-top: 20px;
     border-radius: 2px;
+    width: 40%;
+    min-width: 200px;
 }
 .cocktail-photo {
-    width: 400px;
+    width: 60%;
     border-radius: 2px;
+    border: 1px solid #424642;
 }
 .cocktail-info {
-    margin: 0 5px 5px 5px;
+    margin: 0 5px 10px 5px;
 }
 .comments-div {
-    border: 1px solid black;
+    /* box-shadow: 0 0 3px 3px lightgrey; */
+    border: 1px solid #424642;
+    border-radius: 2px;
     padding: 8px 10px;
     width: 90%;
-    background-color: grey;
+    background-color: lightgrey;
 }
 .single-comment-div {
     box-sizing: border-box;
-    background-color: #f3f4ed;
+    background-color: white;
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 2px;
-    border: 3px solid #c06014;
+    border: 1px solid #c06014;
 }
 .single-cocktail-div a {
     color: inherit;
@@ -48,11 +54,19 @@
 .single-comment-div p {
     margin: 0;
 }
+#comment-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #comment-user {
     font-weight: bold;
+    text-underline-offset: 2px;
+}
+#comment-user:hover {
     text-decoration: underline;
     text-decoration-color: #424642;
-    text-underline-offset: 2px;
+
 }
 #comment-content {
     padding-left: 20px;
@@ -63,44 +77,48 @@
     font-size: 0.9rem;
 }
 #comment-form {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 #comment-form button {
-    width: 50%;
+    width: 40%;
     height: auto;
-    padding: 10px 20px;
-    font-size: 1.3em;
+    padding: 6px 14px;
+    font-size: 1.2em;
     margin: 20px auto;
-    color: #424642;
     font-family: 'Open Sans', sans-serif;
-    border: 2px solid #424642;
-    background-color: #dee8eb;
+    border: 1px solid #424642;
+    background-color: #c06014;
+    color: white;
     border-radius: 4px;
 }
 #comment-form button:hover {
-    background-color: #f3f4ed;
+    color: #c06014;
+    background-color: white;
     cursor: pointer;
 }
 #form-comment-add{
     padding: 5px;
+    margin-top: 20px;
+    /* width: 100%; */
     font-family: 'Open Sans', sans-serif;
 }
 .ingredients {
     padding: 0;
-    margin: 5px auto 0;
+    margin: 5px auto 8px;
     width: 80%;
     border-bottom: 1px solid black;
+    /* font-size: 2rem; */
 }
 .instructions {
-    padding: 10px 0;
+    padding: 10px 0 5px;
     width: 100%;
-    margin: 5px auto 0;
+    margin: 5px auto;
     border-bottom: 1px solid black;
 }
 #delete-time {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 10px;
 }
 #delete-time button {
@@ -113,4 +131,14 @@
     cursor: pointer;
     color: white;
     background-color: #c06014;
+}
+
+@media screen and (max-width: 600px) {
+    .single-cocktail-div {
+        width: 100%;
+    }
+    .inner-div {
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
 }
