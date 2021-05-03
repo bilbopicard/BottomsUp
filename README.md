@@ -2,7 +2,7 @@
 
 ![BottomsUp Logo](/frontend/public/readmelogo.png)
 
-### BottomsUp is a educative and interactive resource for people wanting to find the ingredients of classic cocktails as well as step by step instructions for how to make those cocktails.  Search for cocktails by name or by scrolling through the available options. Use the ingredients and instructions provided to make the cocktail of your choosing and leave a comment letting the community know your thoughts.
+#### BottomsUp is a educative and interactive resource for people wanting to find the ingredients of classic cocktails as well as step by step instructions for how to make those cocktails.  Search for cocktails by name or by scrolling through the available options. Use the ingredients and instructions provided to make the cocktail of your choosing and leave a comment letting the community know your thoughts.
 
 ---
 ### Index
