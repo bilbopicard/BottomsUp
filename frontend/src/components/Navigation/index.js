@@ -32,11 +32,11 @@ function Navigation({ isLoaded }) {
         <nav>
             <ul className='nav-list'>
 
-                <li>
-
-                    <NavLink exact to="/"><h1 className='bottoms-up'>BottomsUp</h1></NavLink>
-
-                </li>
+                <div id='left-side-div'>
+                    <li>
+                        <NavLink id='home-link-logo' exact to="/"><h1 className='bottoms-up'>BottomsUp</h1><img src="/nav-shaker.svg" alt="shaker logo" id='shaker-nav' /></NavLink>
+                    </li>
+                </div>
                 <li>
                     <div className='right-side-nav'>
 
