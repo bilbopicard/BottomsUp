@@ -18,11 +18,12 @@
     /* background-color:lightgrey; */
     box-shadow: 0 0 3px 3px lightgrey;
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 5px; */
     border-radius: 2px;
     width: 40%;
     min-width: 200px;
 }
+
 .cocktail-photo {
     width: 60%;
     border-radius: 2px;
@@ -36,18 +37,20 @@
     text-align: center;
 }
 .cocktail-info {
-    margin: 0 5px 10px 5px;
+    margin: 14px;
 }
 #comment-header {
     margin-top: 0;
+    padding-top: 12px;
+    margin-bottom: 0;
+    border-top: 1px solid #c06014;
+    width: 80%;
 }
 .comments-div {
-    /* box-shadow: 0 0 3px 3px lightgrey; */
-    /* border: 1px solid #424642; */
     border-radius: 2px;
     padding: 15px 10px 0;
     width: 80%;
-    background-color: #dfdede;
+    /* background-color: #dfdede; */
 }
 .single-comment-div {
     box-sizing: border-box;
@@ -57,11 +60,16 @@
     margin: 0 auto 10px;
     /* margin-bottom: 10px; */
     border-radius: 3px;
-    /* border: 1px solid #c06014; */
+    box-shadow: 0 0 2px 2px lightgrey;
 }
 .single-cocktail-div a {
     color: inherit;
     text-decoration: none;
+}
+.description-div {
+    width: 80%;
+    padding-bottom: 8px;
+    margin-top: 18px;
 }
 .description-div li {
     margin-bottom: 8px;
@@ -120,16 +128,17 @@
 }
 .ingredients {
     padding: 0;
-    margin: 5px auto 8px;
-    width: 80%;
-    border-bottom: 1px solid black;
-    /* font-size: 2rem; */
+    margin: 10px auto 12px;
 }
 .instructions {
-    padding: 10px 0 5px;
+    /* padding: 10px 0 5px 14px; */
     width: 100%;
-    margin: 5px auto;
-    border-bottom: 1px solid black;
+    margin: 5px;
+    text-align: left;
+    /* border-bottom: 1px solid black; */
+}
+#instructions-list {
+    margin-top: 8px;
 }
 #delete-time {
     display: flex;

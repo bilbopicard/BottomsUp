@@ -30,8 +30,7 @@ export default function SingleCocktail() {
             day = '' + d.getDate(),
             year = d.getFullYear(),
             hh = d.getHours(),
-            m = d.getMinutes(),
-            s = d.getSeconds();
+            m = d.getMinutes();
 
         let dd = "AM";
         let h = hh;
@@ -43,7 +42,6 @@ export default function SingleCocktail() {
             h = 12;
         }
         m = m < 10 ? "0" + m : m;
-        s = s < 10 ? "0" + s : s;
 
         return [[month, day, year].join('-'), ' ', [h, m].join(':'), ' ', dd];
     }
@@ -67,15 +65,15 @@ export default function SingleCocktail() {
             <div className='inner-div'>
                 <h1 id='single-cocktail-title'>{cocktail?.name}</h1>
                 <img className='cocktail-photo' src={`${cocktail?.imageUrl}`} alt={`${cocktail?.name}`} />
+                <h4 className='ingredients'>Ingredients</h4>
                 <div className='recipe-div'>
-                    <h4 className='ingredients'>Ingredients</h4>
                     {cocktail?.recipe.split(',').map(step => (
                         <p key={step} className='cocktail-info'>{step}</p>
                     ))}
                 </div>
                 <div className='description-div'>
                     <h4 className='instructions'>Instructions</h4>
-                    <ol>
+                    <ol id='instructions-list'>
                         {cocktail?.description.split('.').map(step => (
                             <li key={step}>{step}</li>
                         ))}
