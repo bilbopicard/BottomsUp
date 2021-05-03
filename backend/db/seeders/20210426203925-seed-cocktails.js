@@ -151,7 +151,7 @@ module.exports = {
       {
         name: 'Pisco Sour',
         recipe: '2oz pisco, .75oz simple syrup, .5oz lemon juice, .5oz lime juice, egg white, Angostura bitters',
-        description: 'Place all ingredients into a shaker and shake without ice to froth. Add ice and shake until chilled. Strain into a chilled old fashioned glass. Garnish with a few drops of bitters',
+        description: 'Place all ingredients except bitters into a shaker and shake without ice to froth. Add ice and shake until chilled. Strain into a chilled old fashioned glass. Garnish with a few drops of bitters',
         userId: 1,
         imageUrl: 'https://images.unsplash.com/photo-1597188446702-9b16067ad718?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGlzY28lMjBzb3VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
         createdAt: new Date(),

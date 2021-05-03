@@ -44,21 +44,23 @@ function Profile() {
     return (
         <div id='profile-container'>
             <h1 id='profile-title'>{currentProfileUser?.username}'s Profile</h1>
-            <h2>Comments left on cocktails...</h2>
-            {filteredComments.map(comment => (
-                <div key={comment.id} className='inner-profile-container'>
-                    <Link to={`/cocktails/${comment.cocktailId}`} className='comment-link'>
-                        <div id='border-div'>
-                            <img src={comment.imageUrl} alt={comment.cocktailName} />
-                            <div id='profile-comments'>
-                                <h3 key={comment.id}>{`${comment.cocktailName}`}</h3>
-                                <p key={comment}>{`${comment.content}`}</p>
-                            </div>
+            <h2>Cocktail comments...</h2>
+            <div id='content-wrapper'>
+                {filteredComments.map(comment => (
+                    <div key={comment.id} className='inner-profile-container'>
+                        <Link to={`/cocktails/${comment.cocktailId}`} className='comment-link'>
+                            <div id='border-div'>
+                                <img src={comment.imageUrl} alt={comment.cocktailName} />
+                                <div id='profile-comments'>
+                                    <h3 key={comment.id}>{`${comment.cocktailName}`}</h3>
+                                    <p key={comment}>{`${comment.content}`}</p>
+                                </div>
 
-                        </div>
-                    </Link>
-                </div>
-            ))}
+                            </div>
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </div>
 
     )

@@ -1,16 +1,21 @@
 #profile-container {
     width: 50%;
-    margin: 12vh auto 0;
-    height: 80vh;
-    padding-bottom: 40px;
+    margin: 12vh auto 4vh;
+    /* height: 100vh; */
+    padding-bottom: 20px;
     background-color:#f3f4ed;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    border-radius: 2px;
+}
+#content-wrapper {
+    padding: 4px;
+    width: 80%;
+    margin: auto;
+    /* background-color: lightgray; */
 }
 #border-div {
-    padding: 0;
-    background-color: #c06014;
     display: flex;
-    border-radius: 3px;
+    border-radius: 10px;
 } 
 .comment-link {
     text-decoration: none;
@@ -21,13 +26,16 @@
     margin: auto;
     padding: 12px 0;
     color: #424642;
-    border-bottom: 1px solid #424642;;
+    border-bottom: 2px solid #c06014;
     width: 70%;
 }
 #profile-container h2 {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
 #profile-container h3 {
     margin-top: 5px;
@@ -35,7 +43,6 @@
     text-decoration: underline;
 }
 #profile-comments {
-    /* margin: 0 0 0 10px; */
     padding-left: 10px;
     width: 100%;
     color: #424642;
@@ -47,10 +54,13 @@
 }
 .inner-profile-container {
     width: 90%;
-    margin: 20px auto;
+    margin: 5px auto 14px;
     background-color: #424642;
-    padding: 6px;
-    border-radius: 2px;
+    box-shadow: 0 0 2px 2px lightgray;
+}
+.inner-profile-container:hover {
+    box-shadow: 0 0 2px 2px #c06014;
+    
 }
 .inner-profile-container img {
     width: 100px;

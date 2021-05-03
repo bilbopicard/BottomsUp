@@ -65,7 +65,7 @@ export default function SingleCocktail() {
     return (
         <div className='single-cocktail-div'>
             <div className='inner-div'>
-                <h1 className='cocktail-info'>{cocktail?.name}</h1>
+                <h1 id='single-cocktail-title'>{cocktail?.name}</h1>
                 <img className='cocktail-photo' src={`${cocktail?.imageUrl}`} alt={`${cocktail?.name}`} />
                 <div className='recipe-div'>
                     <h4 className='ingredients'>Ingredients</h4>

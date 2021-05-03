@@ -16,6 +16,7 @@ function About() {
                     <img src="./jamie.png" id='about-pic' alt='Jamie, the developer' />
                 </div>
                 <div id='about-right-div'>
+                    <h2 id='my-name'> Jamie Sullivan</h2>
                     <p>I'm Jamie. I made this app because I wanted a simple to use app for people to find some delicious cocktails. The instructions are easy to follow and the recipes are some of my favorites from my years making classic and craft cocktails behind the stick. This app can be a digital bartender for anyone wanting a tasty drink.</p>
                     <div id='about-links'>
                         <a href='https://github.com/bilbopicard' target='_blank' rel="noreferrer">GitHub</a>

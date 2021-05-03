@@ -28,24 +28,33 @@
     border-radius: 2px;
     border: 1px solid #424642;
 }
+#single-cocktail-title {
+    border-bottom: 2px solid #c06014;
+    margin: 10px auto 20px;
+    padding-bottom: 10px;
+    width: 70%;
+    text-align: center;
+}
 .cocktail-info {
     margin: 0 5px 10px 5px;
 }
 .comments-div {
     /* box-shadow: 0 0 3px 3px lightgrey; */
-    border: 1px solid #424642;
+    /* border: 1px solid #424642; */
     border-radius: 2px;
-    padding: 8px 10px;
-    width: 90%;
-    background-color: lightgrey;
+    padding: 15px 10px 0;
+    width: 80%;
+    background-color: #dfdede;
 }
 .single-comment-div {
     box-sizing: border-box;
     background-color: white;
     padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 2px;
-    border: 1px solid #c06014;
+    width: 90%;
+    margin: 0 auto 10px;
+    /* margin-bottom: 10px; */
+    border-radius: 3px;
+    /* border: 1px solid #c06014; */
 }
 .single-cocktail-div a {
     color: inherit;
@@ -78,7 +87,7 @@
 }
 #comment-form {
     width: 90%;
-    margin: auto;
+    margin:  0 auto;
 }
 #comment-form button {
     width: 40%;
@@ -99,8 +108,8 @@
 }
 #form-comment-add{
     padding: 5px;
-    margin-top: 20px;
-    /* width: 100%; */
+    margin: 20px auto 0;
+    width: 80%;
     font-family: 'Open Sans', sans-serif;
 }
 .ingredients {
@@ -126,11 +135,13 @@
     padding: 1px 4px;
     font-family: 'Open Sans', sans-serif;
     border: 1px solid black;
+    color: white;
+    background-color: #c06014;
 }
 #delete-time button:hover {
     cursor: pointer;
     color: white;
-    background-color: #c06014;
+    background-color: #d37324;
 }
 
 @media screen and (max-width: 600px) {
