@@ -81,7 +81,7 @@ export default function SingleCocktail() {
                         ))}
                     </ol>
                 </div>
-                <h2 className='comment-header'>Comments</h2>
+                <h2 id='comment-header'>Comments</h2>
                 <div className='comments-div'>
                     {cocktailComments?.length ? cocktailComments?.map(comment => (
                         <div className='single-comment-div' key={comment.id}>
