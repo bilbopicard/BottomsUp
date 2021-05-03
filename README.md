@@ -15,7 +15,7 @@
 
 [Database Schema](#Database-Schema)
 
-[Frontend Routes](#Frontend-Routes)
+[Frontend Routes](https://github.com/bilbopicard/BottomsUp/wiki/Frontend-Routes)
 
 <!-- [API Routes](https://github.com/jemcodes/travelScape/wiki/API-Documentation) -->
 
@@ -53,40 +53,6 @@
 ### Database Schema
 ![Database Schema](/frontend/public/bottoms-up-schema.png)
 
-### Frontend Routes
-
-#### /
-* Once logged in users can view the cocktails that are a part of the app
-  * GET /
-
-#### /login
-* Users with an account can login to BottomsUp
-    * GET /login
-    * POST /login
-
-#### /signup
-* New users can signup for an account
-    * GET /signup
-    * POST /signup
-
-#### /cocktails
-* Logged in users can view some of the cocktails available to us on the app
-    * GET /cocktails
-    * POST /cocktails
-
-#### /cocktails/:id
-* Logged in users can view individual cocktails and get in depth information about them
-    * GET /cocktail/:id
-	
-#### /users/:id
-* User profile with a description of themselves and links to their comments
-    * GET /users/:id
-
-#### /about
-* About page about the developer of the app
-    * GET /about
-
-
 ### Key Features
 * Search for cocktails by scrolling through the options or searching by name
 * Find ingredients and instructions to make cocktails
@@ -102,7 +68,7 @@
 https://app-bottoms-up.herokuapp.com/
 
 * Search for cocktails
-* Read cocktail ingredients and the instructions for for to make them
+* Learn cocktail ingredients and the instructions for how to make them
 * Add comments to cocktails
 
 ### Feature Spotlight
@@ -134,9 +100,10 @@ https://app-bottoms-up.herokuapp.com/
 * Navigate to localhost:3000 in browser.
 
 ### Pre-Project Planning
-* Picked and researched a clone and decided on general theme to distinguish
+* Picked and researched an app to clone (Product Hunt)
+* Chose a general theme to distinguish this app
 * Created model schema for database relations with drawSQL
-
+* Scrolled through colorhunt to find a color theme that was enjoyable
 
 
 ### Developer
