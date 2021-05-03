@@ -5,8 +5,8 @@ module.exports = {
     return queryInterface.bulkInsert('Cocktails', [
       {
         name: 'Manhattan',
-        recipe: '2oz bourbon whiskey, 1oz sweet vermouth, 3 dashes Angostura bitters',
-        description: 'Place all ingredients into a mixing glass. Stir with a bar spoon until chilled. Strain into a cocktail glass. Garnish with a cherry',
+        recipe: '2oz whiskey, 1oz sweet vermouth, 3 dashes Angostura bitters',
+        description: 'Place all ingredients into a mixing glass. Add ice and stir until chilled. Strain into a cocktail glass. Garnish with a cherry or orange peel',
         userId: 1,
         imageUrl: 'https://images.unsplash.com/photo-1582056509381-33e11b85733f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80',
         createdAt: new Date(),
