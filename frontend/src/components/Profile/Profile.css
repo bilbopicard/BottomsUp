@@ -1,10 +1,10 @@
 #profile-container {
     width: 50%;
     margin: 12vh auto 4vh;
-    /* height: 100vh; */
+    height: 82vh;
     padding-bottom: 20px;
     background-color:#f3f4ed;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     border-radius: 2px;
 }
 #content-wrapper {
